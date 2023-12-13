@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    position: relative;
+}
+
+#overlay1 {
+    height: 100%;
+    width: 100%;
+    background-color: #000000a1;
+}
+
+#lcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+#lcontent h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+#lcontent p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#lcontent button {
+    background: transparent;
+    border: 1px solid #ffffff;
+    height: 45px;
+    width: 40%;
+    font-weight: 300;
+    letter-spacing: 4px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 15px;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#overlay2 {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffac;
+}
+
+#rcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#rcontent h1 {
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+
+#rcontent p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#rcontent button {
+    background: transparent;
+    border: 1px solid #000;
+    height: 45px;
+    width: 40%;
+    font-weight: 300;
+    letter-spacing: 4px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 15px;
+}
