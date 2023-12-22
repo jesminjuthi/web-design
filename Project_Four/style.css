@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: #1e1a3c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left {
+    padding: 80px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ltop h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+#ltop h1 span {
+    color: #A970D8;
+}
+
+#ltop p {
+    margin-top: 20px;
+    color: #a0a0a0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#lbottom {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.items h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.items h5 {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 5px;
+    opacity: .8;
+}
+
+
+#right {
+    background-image: url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 55%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #a970d856;
+}
+
+@media (max-width: 768px) {
+
+    #left {
+        padding: 45px 35px;
+        width: 50%;
+    }
+
+    #ltop h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    #lbottom {
+        width: 100%;
+    }
+
+    #right{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #main {
+        flex-direction: column-reverse;
+    }
+
+    #left {
+        padding: 40px;
+        width: 100%;
+    }
+
+    #ltop h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #ltop p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    #lbottom {
+        width: 100%;
+    }
+
+    .items h2 {
+        font-size: 16px;
+    }
+
+    .items h5 {
+        font-size: 9px;
+    }
+
+    #right {
+        width: 100%;
+        height: 80%;
+    }
+}
